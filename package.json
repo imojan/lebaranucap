@@ -13,13 +13,16 @@
   "start": "next start",
   "lint": "next lint"
 },
-
-  "author": "Afiur Rahman Fahim",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imojan/lebaranucap.git"
+  },
+  "keywords": [
+    "lebaran"
+  ],
+  "author": "Muhammad Fau Zan Sabani",
   "modification": "GovindCodes",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/faahim/happy-birthday/issues"
-  },
   "homepage": "https://github.com/faahim/happy-birthday#readme",
   "dependencies": {
     "axios": "^1.8.4",
