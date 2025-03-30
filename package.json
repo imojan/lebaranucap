@@ -7,31 +7,13 @@
     "browser-sync": "^1.3.7",
     "run-script-os": "^1.0.2"
   },
-<<<<<<< HEAD
-  "scripts": {
-    "start": "run-script-os",
-    "build": "next build",
-    "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser \"C:\\Program Files\\Firefox Developer Edition\\firefox.exe\"",
-    "//": "Hello! If you are having trouble running this command. Try changing Firefox Developer Edition to FirefoxDeveloperEdition",
-    "start:darwin:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/faahim/happy-birthday.git"
-  },
-  "keywords": [
-    "Happy",
-    "Birthday"
-  ],
-=======
 "scripts": {
   "dev": "next dev",
   "build": "next build",
   "start": "next start",
   "lint": "next lint"
 },
->>>>>>> perubahan baru
+
   "author": "Afiur Rahman Fahim",
   "modification": "GovindCodes",
   "license": "MIT",
