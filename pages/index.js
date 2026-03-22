@@ -106,7 +106,10 @@ export default function Home() {
         </div>
 
         <div className="nine">
-          <p>Okay, if u have a time call me back and tell me if you liked it sayangg.</p>
+          <p>Post test terakhir, kamu sayang aku ga? coba deh cek sini.</p>
+          <a href="https://link.dana.id/danakaget?c=s653us7kn&r=bENDrM&orderId=20260322101214725715010300166726969763808" target="_blank" rel="noopener noreferrer" className="dana-button">
+            klik disini kalau sayang
+          </a>
           <p id="replay">Or click, if you want to watch it again.</p>
           <p className="last-smile">:)</p>
         </div>
