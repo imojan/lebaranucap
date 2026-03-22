@@ -294,7 +294,7 @@ audio::-webkit-media-controls-panel {
   cursor: pointer;
   border: solid #bd6ecf 2px;
   -webkit-tap-highlight-color: transparent;
-  visibility: hidden;
+  opacity: 0;
 }
 
 .dana-button:hover {
