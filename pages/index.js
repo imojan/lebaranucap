@@ -5,15 +5,23 @@ export default function Home() {
   useEffect(() => {
     function PlayMusic() {
       let play = document.getElementById("music");
-      if (play) play.play();
+      if (play) {
+        play.play().catch(error => {
+          console.log("Autoplay blocked, waiting for user interaction...");
+          // Add click listener to play on first user interaction
+          document.addEventListener("click", () => {
+            play.play();
+          }, { once: true });
+        });
+      }
     }
-    setTimeout(PlayMusic, 1000);
+    setTimeout(PlayMusic, 500);
   }, []);
 
   return (
     <>
       <Head>
-        <title>Allyssa, Cantikku</title>
+        <title>Allyssa, bOkem kesayangan</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
@@ -26,29 +34,29 @@ export default function Home() {
 
       <div className="container">
         <div className="one">
-          <h1 className="one">Dear De IcHaaa🍦😼</h1>
-          <p className="two" id="greetingText">My lovely Sunflower💗🌻!</p>
+          <h1 className="one">Dear bocil covid d3p0K gweh</h1>
+          <p className="two" id="greetingText">My lovely Choco Dubai Chewy Cake 💗🌻!</p>
         </div>
         <div className="three">
-          <p>mmm, jadi di hari kemenangan ini aku mau bilang 👉👈</p>
+          <p>maaf telat namun, di hari kemenangan ini aku mau bilang 👉👈</p>
         </div>
         <div className="four">
           <div className="text-box">
             <p className="hbd-chatbox">
-              template ucapan lebaran untuk orang tersayang 2025
+              info template ucapan lebaran untuk orang gajelas di 2026
             </p>
             <p className="fake-btn">Send</p>
           </div>
         </div>
         <div className="five">
-          <p className="idea-1">That a common thing someone could've done</p>
+          <p className="idea-1">dah biasa ga si kalau gituan? alay juga kan ya? aku buatin yg alay lebih deh</p>
           <p className="idea-2">But I tried to make you something special hehe.</p>
           <p className="idea-3">
-            yaa coba-coba buat ini karna aku kan cowomu yang <strong>(lucu) ;)</strong>.
+            yaa coba-coba buat ini karna aku kan cowo orang (orangnya kamu) yang <strong>(lucu) ;)</strong>.
           </p>
           <p className="idea-4">So thats why,</p>
           <p className="idea-5">
-            For a special n beautiful girl deserves a special greeting cards
+            For a cute n beautiful girl deserves a special greeting cards (harusnya sih)
             <span>:)</span>
           </p>
           <p className="idea-6">
@@ -57,15 +65,15 @@ export default function Home() {
           </p>
         </div>
         <div className="six">
-          <img src="/img/lebaran.jpg" alt="" className="girl-dp" id="imagePath" />
+          <img src="/img/image.png" alt="" className="girl-dp" id="imagePath" />
           <div className="wish">
             <h3 className="wish-hbd">
               FORMYKINDBEAUTIFULSMARTCLINGYANDCARINGSWEETYCHOCOLATECAKE
             </h3>
             <h5 id="wishText">
-              Minal aidzin wal faidzin, mohon maaf lahir dan batin YAA CANTIKKU💗🙋🏻.
-              Semoga di hari kemenangan ini kamu sehat selalu dan enjoy ur dayy💗.
-              Salam ya buat Mama, Papa, Mas Asad dan bocil kucing. Love U💗🙋🏻
+              Minal aidzin wal faidzin, mohon maaf lahir dan batin YAA bocilkU💗🙋🏻.
+              Semoga di hari-hari kemenangan ini kamu sehat selalu dan enjoy ur dayy💗.
+              Salam ya buat Mama, Papa, Mas Asad dan bocil kucing termasuk yang baru. Love U (more)💗🙋🏻
             </h5>
           </div>
         </div>
@@ -95,7 +103,7 @@ export default function Home() {
         </div>
       </div>
 
-      <audio controls id="music">
+      <audio controls autoPlay id="music">
         <source src="/img/lebaransong.mp3" type="audio/mpeg" />
       </audio>
     </>
