@@ -23,8 +23,17 @@ export default function Home() {
       <Head>
         <title>Allyssa, bOkem kesayangan</title>
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="description" content="Lebaran greeting card for special someone" />
+        <meta name="theme-color" content="#bd6ecf" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="Lebaran Card" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-TileColor" content="#bd6ecf" />
+        <link rel="apple-touch-icon" href="/img/moon.png" />
         <link rel="shortcut icon" type="image/png" href="/img/moon.png" />
         <link rel="stylesheet" href="/style/style.css" />
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
@@ -57,7 +66,7 @@ export default function Home() {
           <p className="idea-4">So thats why,</p>
           <p className="idea-5">
             For a cute n beautiful girl deserves a special greeting cards (harusnya sih)
-            <span>:)</span>
+            <span> :)</span>
           </p>
           <p className="idea-6">
             <span>S</span>
