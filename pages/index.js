@@ -21,6 +21,7 @@ export default function Home() {
         <link rel="stylesheet" href="/style/style.css" />
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+        <script src="/main.js" defer></script>
       </Head>
 
       <div className="container">
